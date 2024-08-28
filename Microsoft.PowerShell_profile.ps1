@@ -18,6 +18,8 @@ Set-PSReadLineKeyHandler -Key TAB -Function Complete
 
 # import module
 # Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
+# Install-Module DockerCompletion -Scope CurrentUser
+# Import-Module DockerCompletion
 
 # autoload
 ls $home\Documents\PowerShell\autoload\*.ps1 | % {.$_}
