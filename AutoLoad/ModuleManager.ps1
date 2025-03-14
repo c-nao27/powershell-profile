@@ -4,6 +4,7 @@ $modules = "DockerCompletion"
 Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 
 Write-Output "Checking modules..."
+# Import from PowerShell Gallery
 foreach ($module in $modules) {
     $installed = Get-Module -ListAvailable -Name $module | Sort-Object Version -Descending | Select-Object -First 1
 
