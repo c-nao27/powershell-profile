@@ -1,5 +1,5 @@
 function Prompt {
-    $wd = $pwd.ProviderPath.Equals($home) ? "~" : $pwd.ProviderPath.Replace("\", "/")
+    $wd = if ($pwd.ProviderPath.Equals($home)) {"~"} else {$pwd.ProviderPath.Replace("\", "/")}
     $is_admin = [System.Security.Principal.WindowsPrincipal]::new([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
     Write-Host "$env:username " -ForegroundColor "Green" -NoNewLine
     Write-Host $wd -ForegroundColor "Blue" -NoNewLine
