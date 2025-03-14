@@ -5,8 +5,8 @@ Supports PowerShell 5.* and 7.*
 2. When current directory is the home directory, displays "~".
 3. When executed by the super user, displays "#", otherwise displays "$".
 4. Assigns tab completion to complete (works similarly to bash's complete).
-5. Loads .ps1 scripts under the [./Autoload/](https://github.com/c-nao27/powershell-profile/tree/master/AutoLoad) directory.
+5. Loads .ps1 scripts under the [Autoload](/AutoLoad) directory.
 
 ### Autoload includes the following scripts:  
-1. [ModuleManager](https://github.com/c-nao27/powershell-profile/blob/master/AutoLoad/ModuleManager.ps1): Manages modules.
-2. [SSHConfigCompletion](https://github.com/c-nao27/powershell-profile/blob/master/AutoLoad/SSHConfigCompletion.ps1): Set the connection information of `~\.ssh\config` to ssh command completion.
+1. [ModuleManager](/AutoLoad/ModuleManager.ps1): Manages modules.
+2. [SSHConfigCompletion](/AutoLoad/SSHConfigCompletion.ps1): Set the connection information of `~\.ssh\config` to ssh command completion.
