@@ -1,3 +1,2 @@
 # Customized PowerShell Prompt
-[WindowsPowerShell/](./WindowsPowerShell) for PowerShell 5.*  
-[PowerShell/](./PowerShell) for PowerShell 7.*
+Supports PowerShell 5.* and 7.*
