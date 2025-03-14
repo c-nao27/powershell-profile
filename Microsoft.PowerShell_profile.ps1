@@ -3,7 +3,7 @@ function Prompt {
     $is_admin = [System.Security.Principal.WindowsPrincipal]::new([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
     Write-Host "$env:username " -ForegroundColor "Green" -NoNewLine
     Write-Host $wd -ForegroundColor "Blue" -NoNewLine
-    return $is_admin ? "# " : "$ "
+    return $(if ($is_admin) {"# "} else {"$ "})
 }
 
 # tab補完をcomplete関数(bashのcompleteに似た動作)へ割り当て
