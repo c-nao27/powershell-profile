@@ -1,7 +1,5 @@
 $modules = "DockerCompletion"
 
-Write-Host $MyInvocation.MyCommand
-
 # Import from local
 Import-Module $env:ChocolateyInstall\helpers\chocolateyProfile.psm1
 
