@@ -1,6 +1,6 @@
 # Customized PowerShell Prompt
-Supports PowerShell 5.* and 7.*  
-Like Linux ~
+Supports PowerShell 5.* and 7.*
+## Like Linux ~
 1. Replaces the path separator "\" with "/".
 2. When pwd is the home directory, displays "~".
 3. When executed by the super user, displays "#", otherwise displays "$".
