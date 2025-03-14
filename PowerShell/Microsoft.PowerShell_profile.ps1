@@ -1,9 +1,5 @@
 function Prompt {
-    $wsl_home = "//wsl$/{distribution}/home/{username}"
-    $pwd_path = $pwd.ProviderPath.Replace("\", "/")
-    $wd = $pwd.ProviderPath.Equals($home) ? "~"
-        : $pwd_path.Equals($wsl_home) ? "wsl:~"
-        : $pwd_path
+    $wd = $pwd.ProviderPath.Equals($home) ? "~" : $pwd.ProviderPath.Replace("\", "/")
     $is_admin = [System.Security.Principal.WindowsPrincipal]::new([System.Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([System.Security.Principal.WindowsBuiltInRole]::Administrator)
     Write-Host "$env:username " -ForegroundColor "Green" -NoNewLine
     Write-Host $wd -ForegroundColor "Blue" -NoNewLine
