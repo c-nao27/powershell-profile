@@ -8,5 +8,5 @@ Supports PowerShell 5.* and 7.*
 5. Loads .ps1 scripts under the [./Autoload/](https://github.com/c-nao27/powershell-profile/tree/master/AutoLoad) directory.
 
 ### Autoload includes the following scripts:  
-1. [ModuleManager](./Autoload/ModuleManager.ps1): Manages modules.
-2. [SSHConfigCompletion](./Autoload/SSHConfigCompletion.ps1): Set the connection information of `~\.ssh\config` to ssh command completion.
+1. [ModuleManager](https://github.com/c-nao27/powershell-profile/blob/master/AutoLoad/ModuleManager.ps1): Manages modules.
+2. [SSHConfigCompletion](https://github.com/c-nao27/powershell-profile/blob/master/AutoLoad/SSHConfigCompletion.ps1): Set the connection information of `~\.ssh\config` to ssh command completion.
