@@ -1,6 +1,7 @@
 # Customized PowerShell Prompt
 Supports PowerShell 5.* and 7.*
-## Like Linux ~
+![image](https://github.com/user-attachments/assets/c5bf1016-3763-4b34-bd3b-3599bd1f70c5)
+## Like Linux
 1. Replaces the path separator "\\" with "/".
 2. When current directory is the home directory, displays "~".
 3. When executed by the super user, displays "#", otherwise displays "$".
@@ -9,3 +10,4 @@ Supports PowerShell 5.* and 7.*
       Autoload includes the following scripts:
       - [ModuleManager](/AutoLoad/ModuleManager.ps1): Update modules automatically. Add/edit module names in `$modules`, load local modules, etc.
       - [SSHConfigCompletion](/AutoLoad/SSHConfigCompletion.ps1): Set the connection information of `~\.ssh\config` to ssh command completion.
+
